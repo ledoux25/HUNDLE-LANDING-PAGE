@@ -82,6 +82,8 @@ section button:hover {
   width: 45%;
   font-size: 1.2em;
   margin: 0;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
 }
 
 .section2 {
@@ -110,8 +112,7 @@ section button:hover {
 
 .illus {
   display: flex;
-  align-items: center;
-  height: 90vh;
+  height: 85vh;
   flex-direction: column;
 }
 .illus main {
@@ -119,7 +120,16 @@ section button:hover {
   align-items: center;
   justify-content: space-around;
   background-color: #F6FBFF;
-  height: 55vh;
+  height: 150v;
+  width: 100%;
+}
+.illus .bg {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .illus .illustration {
   width: 30%;
@@ -182,6 +192,8 @@ footer button:hover {
 }
 footer .bg {
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 footer main {
   background-color: #00252E;
@@ -235,4 +247,122 @@ footer .socials i {
 footer .socials .my-icon:hover {
   color: rgb(0, 204, 255);
   cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    background-color: white;
+    font-size: 13px;
+  }
+  nav {
+    height: 10vh;
+  }
+  nav .logo img {
+    width: 50%;
+  }
+  nav button {
+    padding: 5px 0;
+    width: 30%;
+    font-size: 10px;
+  }
+  .head-section {
+    height: 90vh;
+    justify-content: center;
+  }
+  .head-section p {
+    width: 85%;
+    font-size: 1em;
+    margin: 8vh 0;
+  }
+  .head-section h1 {
+    font-size: 2em;
+  }
+  .section2 {
+    height: 100vh;
+    padding: 0;
+  }
+  .section2 img {
+    width: 80%;
+  }
+  .section2 .sub-section {
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-around;
+  }
+  .section2 .sub-section img {
+    width: 20%;
+  }
+  .illus {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .illus main {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .illus main article {
+    width: 95%;
+    text-align: center;
+    font-size: 13px;
+  }
+  .illus main .illustration {
+    width: 70%;
+  }
+  .section4 {
+    flex-direction: column;
+    height: 75vh;
+    justify-content: center;
+  }
+  .section4 article {
+    width: 90%;
+    text-align: center;
+    font-size: 13px;
+    color: hsl(192, 100%, 9%);
+  }
+  .section4 img {
+    width: 70%;
+  }
+  .section5 {
+    height: 80vh !important;
+  }
+  .section6 {
+    text-align: center;
+    font-size: 0.7em;
+    align-items: center;
+  }
+  footer {
+    height: 110vh;
+    align-items: center !important;
+  }
+  footer .fo-svg {
+    transform: scale(0.7);
+    position: relative;
+    left: -13%;
+  }
+  footer main {
+    flex-direction: column-reverse;
+    justify-items: space-evenly;
+  }
+  footer main .contact, footer main .subscribe {
+    width: 90%;
+  }
+  footer main .contact button, footer main .subscribe button {
+    display: block;
+  }
+  footer main .subscribe div {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  footer main .subscribe div input {
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  footer main .subscribe div button {
+    width: 40%;
+  }
 }/*# sourceMappingURL=style.css.map */
