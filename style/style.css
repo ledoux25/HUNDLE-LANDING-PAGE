@@ -33,6 +33,10 @@ button {
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.171);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 nav {
   width: 90%;
   display: flex;
@@ -48,8 +52,16 @@ nav button {
   border-radius: 20px;
   box-shadow: none;
 }
+nav button:hover {
+  color: hsl(321, 100%, 78%);
+  border: 1px solid hsl(321, 100%, 78%);
+}
 nav .logo {
   display: inline-block;
+}
+
+section button:hover {
+  background-color: hsl(321, 100%, 78%);
 }
 
 .head-section {
@@ -165,6 +177,9 @@ footer {
   color: white;
   font-size: 13px;
 }
+footer button:hover {
+  background-color: hsl(321, 100%, 78%);
+}
 footer .bg {
   width: 100%;
 }
@@ -195,6 +210,9 @@ footer .subscribe div input {
   height: 30px;
   width: 70%;
 }
+footer .subscribe div input:hover {
+  border: hsl(0, 100%, 63%);
+}
 footer .subscribe div button {
   border-radius: 5px;
   padding: 10px 0;
@@ -213,4 +231,8 @@ footer .socials {
 }
 footer .socials i {
   margin-right: 8px;
+}
+footer .socials .my-icon:hover {
+  color: rgb(0, 204, 255);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

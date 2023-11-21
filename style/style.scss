@@ -36,6 +36,9 @@ button{
     font-weight: 600;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.171);
 }
+button:hover{
+    cursor: pointer;
+}
 nav{
     width: 90%;
     display: flex;
@@ -50,8 +53,18 @@ nav{
         border-radius: 20px;
         box-shadow: none;
     }
+    button:hover{
+        color: $LightPink;
+        border: 1px solid $LightPink;
+
+    }
     .logo{
         display: inline-block;
+    }
+}
+section{
+    button:hover{
+        background-color: $LightPink;
     }
 }
 .head-section{
@@ -165,6 +178,9 @@ footer{
     flex-direction: column;
     color: white;
     font-size: 13px;
+    button:hover{
+        background-color: $LightPink;
+    }
     .bg{
         width: 100%;
     }
@@ -196,6 +212,9 @@ footer{
                 height: 30px;
                 width: 70%
             }
+            input:hover{
+                border: $LightRed;
+            }
             button{
                 border-radius: 5px;
                 padding: 10px 0;
@@ -214,6 +233,10 @@ footer{
     .socials{
         i{
             margin-right: 8px;
+        }
+        .my-icon:hover{
+            color: rgb(0, 204, 255);
+            cursor: pointer;
         }
         padding: 25px 0 0 0;
     }
